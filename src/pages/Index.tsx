@@ -25,6 +25,7 @@ const Index = () => {
       <StoriesSection />
       <ContactSection />
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };
