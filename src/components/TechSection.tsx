@@ -33,10 +33,10 @@ const TechSection = () => {
         </div>
       </div>
 
-      <div className="mt-24 overflow-hidden border-t border-b border-secondary-foreground/10 py-4">
-        <div className="animate-marquee flex whitespace-nowrap">
-          {Array.from({ length: 8 }).map((_, i) => (
-            <div key={i} className="flex items-center gap-6 mx-6">
+      <div className="mt-24 border-t border-b border-secondary-foreground/10 py-4">
+        <div className="container flex items-center justify-between">
+          {Array.from({ length: 6 }).map((_, i) => (
+            <div key={i} className="flex items-center gap-3">
               <img src={logoTransparent} alt="" className="h-8 w-8" />
               <span className="text-xl font-display font-bold tracking-wide">
                 Bright<span className="text-primary">Kitty</span>
