@@ -16,7 +16,7 @@ const ProcessSection = () => {
   const [active, setActive] = useState(0);
 
   return (
-    <section id="process" className="py-24 bg-background">
+    <section id="process" className="py-16 md:py-24 bg-background">
       <div className="container">
         <AnimateIn>
           <p className="text-xs font-semibold tracking-[0.3em] text-muted-foreground uppercase mb-4">
