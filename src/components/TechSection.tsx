@@ -45,7 +45,7 @@ const TechSection = () => {
                 <img
                   src={tech.icon}
                   alt={tech.name}
-                  className="h-7 w-7 sm:h-10 sm:w-10 object-contain opacity-70 group-hover:opacity-100 transition-opacity [filter:brightness(0)_invert(1)_opacity(0.8)] group-hover:[filter:none] max-md:[filter:none] max-md:opacity-100"
+                  className="h-7 w-7 sm:h-10 sm:w-10 object-contain opacity-70 group-hover:opacity-100 transition-opacity [filter:brightness(0)_invert(1)_opacity(0.8)] group-hover:[filter:none] max-lg:[filter:none] max-lg:opacity-100"
                 />
                 <span className="text-[10px] sm:text-xs font-medium opacity-60 group-hover:opacity-100 transition-opacity text-center leading-tight">
                   {tech.name}
