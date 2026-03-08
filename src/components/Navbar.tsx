@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import wordmarkBlue from "@/assets/wordmark-blue.png";
 
@@ -14,9 +14,36 @@ const navItems = [
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
+
+  useEffect(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > 50);
+
+      const sections = navItems.map((item) => item.href.slice(1));
+      let current = "";
+      for (const id of sections) {
+        const el = document.getElementById(id);
+        if (el && el.getBoundingClientRect().top <= 120) {
+          current = id;
+        }
+      }
+      setActiveSection(current);
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-background/95 backdrop-blur-sm border-b border-border shadow-sm"
+          : "bg-transparent border-b border-transparent"
+      }`}
+    >
       <div className="container flex items-center justify-between h-16">
         <a href="#" className="flex items-center">
           <img src={wordmarkBlue} alt="BrightKitty" className="h-8" />
@@ -28,7 +55,13 @@ const Navbar = () => {
             <a
               key={item.label}
               href={item.href}
-              className="text-xs font-semibold tracking-widest text-foreground hover:text-primary transition-colors"
+              className={`text-xs font-semibold tracking-widest transition-colors relative pb-1 ${
+                activeSection === item.href.slice(1)
+                  ? "text-primary after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-primary"
+                  : scrolled
+                  ? "text-foreground hover:text-primary"
+                  : "text-foreground/80 hover:text-primary"
+              }`}
             >
               {item.label}
             </a>
@@ -49,7 +82,11 @@ const Navbar = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-sm font-semibold tracking-widest text-foreground hover:text-primary transition-colors"
+                className={`text-sm font-semibold tracking-widest transition-colors ${
+                  activeSection === item.href.slice(1)
+                    ? "text-primary"
+                    : "text-foreground hover:text-primary"
+                }`}
                 onClick={() => setOpen(false)}
               >
                 {item.label}
