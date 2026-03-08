@@ -64,7 +64,7 @@ const PortfolioSection = () => {
     : projects.filter((p) => p.category === activeFilter);
 
   return (
-    <section id="portfolio" className="py-24 bg-muted">
+    <section id="portfolio" className="py-16 md:py-24 bg-muted">
       <div className="container">
         <AnimateIn>
           <p className="text-xs font-semibold tracking-[0.3em] text-muted-foreground uppercase mb-4">
