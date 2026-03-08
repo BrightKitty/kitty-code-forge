@@ -106,7 +106,7 @@ const HeroSection = () => {
         <span className="text-secondary/50 text-[9px] tracking-[0.2em] uppercase font-semibold hidden sm:block">Scroll</span>
         <ChevronDown size={20} className="text-secondary/60 animate-bounce" />
       </motion.div>
-    </section>
+    </motion.section>
   );
 };
 
