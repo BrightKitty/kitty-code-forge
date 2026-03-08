@@ -26,7 +26,7 @@ const techStack = [
 
 const TechSection = () => {
   return (
-    <section id="tech" className="py-24 bg-secondary text-secondary-foreground">
+    <section id="tech" className="pt-24 pb-0 bg-secondary text-secondary-foreground">
       <div className="container">
         <AnimateIn>
           <p className="text-xs font-semibold tracking-[0.3em] uppercase mb-4 opacity-60">
