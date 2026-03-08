@@ -26,28 +26,28 @@ const techStack = [
 
 const TechSection = () => {
   return (
-    <section id="tech" className="pt-24 pb-0 bg-secondary text-secondary-foreground">
+    <section id="tech" className="pt-16 md:pt-24 pb-0 bg-secondary text-secondary-foreground">
       <div className="container">
         <AnimateIn>
           <p className="text-xs font-semibold tracking-[0.3em] uppercase mb-4 opacity-60">
             SECURE, RELIABLE, TO-THE-POINT
           </p>
-          <h2 className="text-4xl md:text-5xl font-display font-bold">Tech Stack</h2>
-          <p className="mt-6 max-w-2xl opacity-80 leading-relaxed">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold">Tech Stack</h2>
+          <p className="mt-4 md:mt-6 max-w-2xl opacity-80 leading-relaxed text-sm md:text-base">
             We only deal with the most tested open source frameworks and APIs that are safe and proven to significantly decrease client frustration.
           </p>
         </AnimateIn>
 
-        <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-6">
+        <div className="mt-8 md:mt-12 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3 sm:gap-6">
           {techStack.map((tech, i) => (
             <AnimateIn key={tech.name} delay={i * 0.04}>
-              <div className="bg-secondary-foreground/5 border border-secondary-foreground/10 rounded-lg px-4 py-5 flex flex-col items-center gap-3 hover:border-primary/50 hover:bg-secondary-foreground/10 transition-all group">
+              <div className="bg-secondary-foreground/5 border border-secondary-foreground/10 rounded-lg px-2 sm:px-4 py-3 sm:py-5 flex flex-col items-center gap-2 sm:gap-3 hover:border-primary/50 hover:bg-secondary-foreground/10 transition-all group">
                 <img
                   src={tech.icon}
                   alt={tech.name}
-                  className="h-10 w-10 object-contain opacity-70 group-hover:opacity-100 transition-opacity [filter:brightness(0)_invert(1)_opacity(0.8)] group-hover:[filter:none] max-md:[filter:none] max-md:opacity-100"
+                  className="h-7 w-7 sm:h-10 sm:w-10 object-contain opacity-70 group-hover:opacity-100 transition-opacity [filter:brightness(0)_invert(1)_opacity(0.8)] group-hover:[filter:none] max-md:[filter:none] max-md:opacity-100"
                 />
-                <span className="text-xs font-medium opacity-60 group-hover:opacity-100 transition-opacity">
+                <span className="text-[10px] sm:text-xs font-medium opacity-60 group-hover:opacity-100 transition-opacity text-center leading-tight">
                   {tech.name}
                 </span>
               </div>
@@ -56,12 +56,12 @@ const TechSection = () => {
         </div>
       </div>
 
-      <div className="mt-24 border-t border-b border-secondary-foreground/10 py-4">
-        <div className="container flex items-center justify-between">
+      <div className="mt-12 md:mt-24 border-t border-b border-secondary-foreground/10 py-4 overflow-hidden">
+        <div className="container flex items-center justify-between gap-4">
           {Array.from({ length: 6 }).map((_, i) => (
-            <div key={i} className="flex items-center gap-3">
-              <img src={logoTransparent} alt="" className="h-8 w-8" />
-              <span className="text-xl font-display font-bold tracking-wide">
+            <div key={i} className={`flex items-center gap-2 sm:gap-3 shrink-0 ${i > 1 ? "hidden sm:flex" : ""} ${i > 3 ? "sm:hidden lg:flex" : ""}`}>
+              <img src={logoTransparent} alt="" className="h-6 w-6 sm:h-8 sm:w-8" />
+              <span className="text-sm sm:text-xl font-display font-bold tracking-wide whitespace-nowrap">
                 Bright<span className="text-primary">Kitty</span>
               </span>
             </div>

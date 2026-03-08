@@ -22,29 +22,30 @@ const ProcessSection = () => {
           <p className="text-xs font-semibold tracking-[0.3em] text-muted-foreground uppercase mb-4">
             THIRD, YOU SHOULD KNOW ABOUT
           </p>
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-foreground">
             Our Process <span className="text-gradient-brand">Flow</span>
           </h2>
         </AnimateIn>
 
         <AnimateIn delay={0.15}>
-          <div className="mt-8 md:mt-12 grid md:grid-cols-[300px_1fr] gap-6 md:gap-8">
-            <div className="flex flex-wrap md:flex-col gap-2">
+          <div className="mt-8 md:mt-12 grid md:grid-cols-[300px_1fr] gap-4 md:gap-8">
+            {/* Mobile: 3-col grid of step buttons. Desktop: vertical list */}
+            <div className="grid grid-cols-3 md:flex md:flex-col gap-2">
               {steps.map((step, i) => (
                 <motion.button
                   key={step.title}
                   onClick={() => setActive(i)}
                   whileHover={{ x: 4 }}
-                  className={`flex items-center gap-2 sm:gap-3 px-3 sm:px-4 py-2 sm:py-3 rounded-lg text-left transition-all text-xs sm:text-sm font-semibold ${
+                  className={`flex items-center justify-center md:justify-start gap-2 px-2 sm:px-4 py-2.5 sm:py-3 rounded-lg text-center md:text-left transition-all text-[11px] sm:text-sm font-semibold ${
                     i === active ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:bg-muted"
                   }`}
                 >
-                  <step.icon size={18} />
-                  {step.title}
+                  <step.icon size={16} className="shrink-0" />
+                  <span className="leading-tight">{step.title}</span>
                 </motion.button>
               ))}
             </div>
-            <div className="bg-muted rounded-xl p-5 sm:p-8 md:p-12 flex items-center min-h-[200px] md:min-h-[250px]">
+            <div className="bg-muted rounded-xl p-5 sm:p-8 md:p-12 flex items-center min-h-[180px] md:min-h-[250px]">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={active}
@@ -53,11 +54,11 @@ const ProcessSection = () => {
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                    {(() => { const Icon = steps[active].icon; return <Icon size={24} className="text-primary" />; })()}
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 sm:mb-6">
+                    {(() => { const Icon = steps[active].icon; return <Icon size={20} className="text-primary sm:[&]:w-6 sm:[&]:h-6" />; })()}
                   </div>
-                  <h3 className="text-2xl font-display font-bold text-foreground mb-4">{steps[active].title}</h3>
-                  <p className="text-muted-foreground leading-relaxed max-w-lg">{steps[active].description}</p>
+                  <h3 className="text-xl sm:text-2xl font-display font-bold text-foreground mb-3 sm:mb-4">{steps[active].title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed max-w-lg">{steps[active].description}</p>
                 </motion.div>
               </AnimatePresence>
             </div>

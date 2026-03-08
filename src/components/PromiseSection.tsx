@@ -11,24 +11,24 @@ const PromiseSection = () => {
           <p className="text-xs font-semibold tracking-[0.3em] text-muted-foreground uppercase mb-4">
             SECOND, YOU SHOULD KNOW
           </p>
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-foreground">
             OUR PROMISE
           </h2>
         </AnimateIn>
 
         <div className="mt-8 md:mt-12 grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <AnimateIn delay={0.1}>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-sm sm:text-lg text-muted-foreground leading-relaxed">
               Specializing in the creation of vibrant, state-of-the-art websites, we pride ourselves on delivering to-the-point web apps that are extremely stable and convert.
             </p>
-            <p className="mt-6 text-muted-foreground leading-relaxed">
+            <p className="mt-4 sm:mt-6 text-sm sm:text-base text-muted-foreground leading-relaxed">
               Our commitment to consistency, code readability, and maintainability leaves you with a website that requires the least amount of long-term maintenance possible.
             </p>
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.97 }}
               href="#contact"
-              className="mt-8 md:mt-10 inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 sm:px-10 py-3 sm:py-4 font-bold text-sm tracking-widest uppercase"
+              className="mt-6 md:mt-10 inline-flex items-center gap-3 bg-primary text-primary-foreground px-7 sm:px-10 py-3 sm:py-4 font-bold text-xs sm:text-sm tracking-widest uppercase"
             >
               REACH OUT <ArrowRight size={16} />
             </motion.a>
@@ -38,7 +38,7 @@ const PromiseSection = () => {
               <img
                 src={promiseKitties}
                 alt="Kitty engineers working together"
-                className="w-full max-w-md drop-shadow-xl"
+                className="w-full max-w-[280px] sm:max-w-md drop-shadow-xl"
               />
             </div>
           </AnimateIn>
