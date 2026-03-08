@@ -28,8 +28,8 @@ const ProcessSection = () => {
         </AnimateIn>
 
         <AnimateIn delay={0.15}>
-          <div className="mt-12 grid md:grid-cols-[300px_1fr] gap-8">
-            <div className="flex md:flex-col gap-2">
+          <div className="mt-8 md:mt-12 grid md:grid-cols-[300px_1fr] gap-6 md:gap-8">
+            <div className="flex flex-wrap md:flex-col gap-2">
               {steps.map((step, i) => (
                 <motion.button
                   key={step.title}
