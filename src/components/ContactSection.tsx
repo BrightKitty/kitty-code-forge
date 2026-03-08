@@ -1,0 +1,70 @@
+import { useState } from "react";
+import { Send } from "lucide-react";
+import contactKitty from "@/assets/contact-kitty.png";
+
+const ContactSection = () => {
+  const [form, setForm] = useState({ name: "", email: "", message: "" });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // placeholder
+    alert("Thanks for reaching out! We'll get back to you soon 🐱");
+    setForm({ name: "", email: "", message: "" });
+  };
+
+  return (
+    <section id="contact" className="relative">
+      {/* Background image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: `url(${contactKitty})` }}
+      >
+        <div className="absolute inset-0 bg-secondary/90" />
+      </div>
+
+      <div className="relative container py-24">
+        <p className="text-xs font-semibold tracking-[0.3em] uppercase mb-4 text-secondary-foreground/60">
+          WANT TO SAY "Hi"?
+        </p>
+        <h2 className="text-4xl md:text-5xl font-display font-bold text-secondary-foreground">
+          Contact <span className="text-primary">Us</span>
+        </h2>
+
+        <form onSubmit={handleSubmit} className="mt-12 max-w-xl grid gap-4">
+          <input
+            type="text"
+            placeholder="Your name"
+            required
+            value={form.name}
+            onChange={(e) => setForm({ ...form, name: e.target.value })}
+            className="bg-secondary-foreground/10 border border-secondary-foreground/20 rounded-lg px-5 py-3 text-secondary-foreground placeholder:text-secondary-foreground/40 focus:outline-none focus:border-primary transition-colors"
+          />
+          <input
+            type="email"
+            placeholder="Your email"
+            required
+            value={form.email}
+            onChange={(e) => setForm({ ...form, email: e.target.value })}
+            className="bg-secondary-foreground/10 border border-secondary-foreground/20 rounded-lg px-5 py-3 text-secondary-foreground placeholder:text-secondary-foreground/40 focus:outline-none focus:border-primary transition-colors"
+          />
+          <textarea
+            placeholder="Your message"
+            required
+            rows={5}
+            value={form.message}
+            onChange={(e) => setForm({ ...form, message: e.target.value })}
+            className="bg-secondary-foreground/10 border border-secondary-foreground/20 rounded-lg px-5 py-3 text-secondary-foreground placeholder:text-secondary-foreground/40 focus:outline-none focus:border-primary transition-colors resize-none"
+          />
+          <button
+            type="submit"
+            className="inline-flex items-center justify-center gap-3 bg-primary text-primary-foreground px-10 py-4 font-bold text-sm tracking-widest uppercase hover:opacity-90 transition-opacity w-fit"
+          >
+            SEND MESSAGE <Send size={16} />
+          </button>
+        </form>
+      </div>
+    </section>
+  );
+};
+
+export default ContactSection;
