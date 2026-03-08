@@ -9,6 +9,7 @@ import PortfolioSection from "@/components/PortfolioSection";
 import StoriesSection from "@/components/StoriesSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const Index = () => {
   return (
