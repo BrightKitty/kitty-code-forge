@@ -5,7 +5,7 @@ import promiseKitties from "@/assets/promise-kitties.png";
 
 const PromiseSection = () => {
   return (
-    <section id="promise" className="py-24 bg-muted">
+    <section id="promise" className="py-16 md:py-24 bg-muted">
       <div className="container">
         <AnimateIn>
           <p className="text-xs font-semibold tracking-[0.3em] text-muted-foreground uppercase mb-4">
