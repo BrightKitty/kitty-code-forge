@@ -95,7 +95,7 @@ const PortfolioSection = () => {
         </AnimateIn>
 
         {/* Project grid */}
-        <motion.div layout className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <motion.div layout className="mt-8 md:mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           <AnimatePresence mode="popLayout">
             {filtered.map((project) => (
               <motion.div
