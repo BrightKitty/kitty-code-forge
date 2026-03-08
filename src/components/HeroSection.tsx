@@ -10,17 +10,17 @@ const HeroSection = () => {
           initial={{ opacity: 0, x: -60 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="z-10"
-        >
-          <h1 className="text-6xl md:text-8xl font-display font-bold uppercase leading-[0.9] tracking-tight text-secondary">
+          className="z-10">
+          
+          <h1 className="text-6xl font-display font-bold uppercase leading-[0.9] tracking-tight text-secondary md:text-9xl">
             BRIGHT<span className="font-extrabold text-secondary-foreground">KITTY</span>
           </h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="mt-8 text-lg md:text-xl text-secondary max-w-md leading-relaxed opacity-90"
-          >
+            className="mt-8 text-lg md:text-xl text-secondary max-w-md leading-relaxed opacity-90">
+            
             We craft immersive web experiences that transcend expectations — with a purr.
           </motion.p>
           <motion.a
@@ -30,8 +30,8 @@ const HeroSection = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
             href="#contact"
-            className="mt-10 inline-flex items-center gap-3 bg-secondary text-secondary-foreground px-10 py-4 font-bold text-sm tracking-widest uppercase"
-          >
+            className="mt-10 inline-flex items-center gap-3 bg-secondary text-secondary-foreground px-10 py-4 font-bold text-sm tracking-widest uppercase">
+            
             REACH OUT <ArrowRight size={16} />
           </motion.a>
         </motion.div>
@@ -39,27 +39,27 @@ const HeroSection = () => {
           initial={{ opacity: 0, scale: 0.8, y: 40 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-          className="relative flex justify-center md:justify-end"
-        >
+          className="relative flex justify-center md:justify-end">
+          
           <img
             src={heroKitty}
             alt="BrightKitty Engineer Mascot"
-            className="w-[400px] md:w-[500px] drop-shadow-2xl"
-          />
+            className="w-[400px] md:w-[500px] drop-shadow-2xl" />
+          
         </motion.div>
       </div>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 0.6 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce"
-      >
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-secondary">
-          <path d="M7 10L12 15L17 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          <path d="M7 10L12 15L17 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </motion.div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default HeroSection;
