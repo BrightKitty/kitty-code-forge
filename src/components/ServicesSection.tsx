@@ -30,7 +30,7 @@ const ServicesSection = () => {
               <motion.div
                 whileHover={{ y: -6, scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 300 }}
-                className="group bg-muted rounded-xl p-8 hover:bg-primary hover:text-primary-foreground transition-colors duration-300 cursor-default h-full"
+                className="group bg-muted rounded-xl p-5 sm:p-8 hover:bg-primary hover:text-primary-foreground transition-colors duration-300 cursor-default h-full overflow-hidden"
               >
                 <service.icon size={32} className="text-primary group-hover:text-primary-foreground transition-colors mb-6" />
                 <h3 className="text-xl font-display font-bold mb-3">{service.title}</h3>
