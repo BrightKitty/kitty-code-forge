@@ -16,7 +16,7 @@ const testimonials = [
 
 const StoriesSection = () => {
   return (
-    <section id="stories" className="py-24 bg-muted">
+    <section id="stories" className="py-16 md:py-24 bg-muted">
       <div className="container">
         <AnimateIn>
           <p className="text-xs font-semibold tracking-[0.3em] text-muted-foreground uppercase mb-4">CHECK OUT</p>
