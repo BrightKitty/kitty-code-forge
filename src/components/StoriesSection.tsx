@@ -20,20 +20,20 @@ const StoriesSection = () => {
       <div className="container">
         <AnimateIn>
           <p className="text-xs font-semibold tracking-[0.3em] text-muted-foreground uppercase mb-4">CHECK OUT</p>
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-foreground">
             Our <span className="text-gradient-brand">Stories</span>
           </h2>
         </AnimateIn>
 
-        <div className="mt-8 md:mt-12 grid md:grid-cols-2 gap-6 md:gap-8">
+        <div className="mt-8 md:mt-12 grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
           {testimonials.map((t, i) => (
             <AnimateIn key={t.name} delay={i * 0.15} direction={i === 0 ? "left" : "right"}>
               <div className="bg-background rounded-xl p-5 sm:p-8 md:p-10 relative h-full">
-                <Quote size={32} className="text-primary/20 mb-4" />
-                <p className="italic text-muted-foreground leading-relaxed">"{t.quote}"</p>
-                <div className="mt-6">
-                  <p className="font-bold text-foreground">{t.name}</p>
-                  <p className="text-sm text-primary">{t.company}</p>
+                <Quote size={24} className="text-primary/20 mb-3 sm:mb-4 sm:[&]:w-8 sm:[&]:h-8" />
+                <p className="italic text-sm sm:text-base text-muted-foreground leading-relaxed">"{t.quote}"</p>
+                <div className="mt-4 sm:mt-6">
+                  <p className="font-bold text-sm sm:text-base text-foreground">{t.name}</p>
+                  <p className="text-xs sm:text-sm text-primary">{t.company}</p>
                 </div>
               </div>
             </AnimateIn>

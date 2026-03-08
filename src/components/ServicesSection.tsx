@@ -13,18 +13,18 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="py-24 bg-background">
+    <section id="services" className="py-16 md:py-24 bg-background">
       <div className="container">
         <AnimateIn>
           <p className="text-xs font-semibold tracking-[0.3em] text-muted-foreground uppercase mb-4">
             WELL COVERED AND EFFECTIVE
           </p>
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-foreground">
             Services <span className="text-gradient-brand">Provided</span>
           </h2>
         </AnimateIn>
 
-        <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="mt-8 md:mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {services.map((service, i) => (
             <AnimateIn key={service.title} delay={i * 0.08}>
               <motion.div
@@ -32,9 +32,9 @@ const ServicesSection = () => {
                 transition={{ type: "spring", stiffness: 300 }}
                 className="group bg-muted rounded-xl p-5 sm:p-8 hover:bg-primary hover:text-primary-foreground transition-colors duration-300 cursor-default h-full overflow-hidden"
               >
-                <service.icon size={32} className="text-primary group-hover:text-primary-foreground transition-colors mb-6" />
-                <h3 className="text-xl font-display font-bold mb-3">{service.title}</h3>
-                <p className="text-sm leading-relaxed text-muted-foreground group-hover:text-primary-foreground/80 transition-colors">
+                <service.icon size={28} className="text-primary group-hover:text-primary-foreground transition-colors mb-4 sm:mb-6 sm:[&]:w-8 sm:[&]:h-8" />
+                <h3 className="text-lg sm:text-xl font-display font-bold mb-2 sm:mb-3">{service.title}</h3>
+                <p className="text-xs sm:text-sm leading-relaxed text-muted-foreground group-hover:text-primary-foreground/80 transition-colors">
                   {service.description}
                 </p>
               </motion.div>

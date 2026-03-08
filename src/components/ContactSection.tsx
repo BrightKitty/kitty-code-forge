@@ -22,26 +22,26 @@ const ContactSection = () => {
       <div className="relative container py-16 md:py-24">
         <AnimateIn>
           <p className="text-xs font-semibold tracking-[0.3em] uppercase mb-4 text-secondary-foreground/60">WANT TO SAY "Hi"?</p>
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-secondary-foreground">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-secondary-foreground">
             Contact <span className="text-primary">Us</span>
           </h2>
         </AnimateIn>
 
         <AnimateIn delay={0.2}>
-          <form onSubmit={handleSubmit} className="mt-12 max-w-xl grid gap-4">
+          <form onSubmit={handleSubmit} className="mt-8 md:mt-12 max-w-xl grid gap-3 sm:gap-4">
             <input type="text" placeholder="Your name" required value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })}
-              className="bg-secondary-foreground/10 border border-secondary-foreground/20 rounded-lg px-5 py-3 text-secondary-foreground placeholder:text-secondary-foreground/40 focus:outline-none focus:border-primary transition-colors" />
+              className="bg-secondary-foreground/10 border border-secondary-foreground/20 rounded-lg px-4 sm:px-5 py-2.5 sm:py-3 text-sm sm:text-base text-secondary-foreground placeholder:text-secondary-foreground/40 focus:outline-none focus:border-primary transition-colors" />
             <input type="email" placeholder="Your email" required value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })}
-              className="bg-secondary-foreground/10 border border-secondary-foreground/20 rounded-lg px-5 py-3 text-secondary-foreground placeholder:text-secondary-foreground/40 focus:outline-none focus:border-primary transition-colors" />
-            <textarea placeholder="Your message" required rows={5} value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })}
-              className="bg-secondary-foreground/10 border border-secondary-foreground/20 rounded-lg px-5 py-3 text-secondary-foreground placeholder:text-secondary-foreground/40 focus:outline-none focus:border-primary transition-colors resize-none" />
+              className="bg-secondary-foreground/10 border border-secondary-foreground/20 rounded-lg px-4 sm:px-5 py-2.5 sm:py-3 text-sm sm:text-base text-secondary-foreground placeholder:text-secondary-foreground/40 focus:outline-none focus:border-primary transition-colors" />
+            <textarea placeholder="Your message" required rows={4} value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })}
+              className="bg-secondary-foreground/10 border border-secondary-foreground/20 rounded-lg px-4 sm:px-5 py-2.5 sm:py-3 text-sm sm:text-base text-secondary-foreground placeholder:text-secondary-foreground/40 focus:outline-none focus:border-primary transition-colors resize-none" />
             <motion.button
               type="submit"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.97 }}
-              className="inline-flex items-center justify-center gap-3 bg-primary text-primary-foreground px-10 py-4 font-bold text-sm tracking-widest uppercase w-fit"
+              className="inline-flex items-center justify-center gap-2 sm:gap-3 bg-primary text-primary-foreground px-7 sm:px-10 py-3 sm:py-4 font-bold text-xs sm:text-sm tracking-widest uppercase w-fit"
             >
-              SEND MESSAGE <Send size={16} />
+              SEND MESSAGE <Send size={14} />
             </motion.button>
           </form>
         </AnimateIn>
