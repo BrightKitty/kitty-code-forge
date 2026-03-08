@@ -12,7 +12,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="z-10">
           
-          <h1 className="text-6xl font-display font-bold uppercase leading-[0.9] tracking-tight text-secondary md:text-9xl">
+          <h1 className="text-5xl font-display font-bold uppercase leading-[0.9] tracking-tight text-secondary sm:text-6xl md:text-9xl">
             BRIGHT<span className="font-extrabold text-secondary-foreground">KITTY</span>
           </h1>
           <motion.p
