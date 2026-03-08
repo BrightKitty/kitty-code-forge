@@ -28,7 +28,7 @@ const StoriesSection = () => {
         <div className="mt-8 md:mt-12 grid md:grid-cols-2 gap-6 md:gap-8">
           {testimonials.map((t, i) => (
             <AnimateIn key={t.name} delay={i * 0.15} direction={i === 0 ? "left" : "right"}>
-              <div className="bg-background rounded-xl p-8 md:p-10 relative h-full">
+              <div className="bg-background rounded-xl p-5 sm:p-8 md:p-10 relative h-full">
                 <Quote size={32} className="text-primary/20 mb-4" />
                 <p className="italic text-muted-foreground leading-relaxed">"{t.quote}"</p>
                 <div className="mt-6">

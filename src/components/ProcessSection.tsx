@@ -44,7 +44,7 @@ const ProcessSection = () => {
                 </motion.button>
               ))}
             </div>
-            <div className="bg-muted rounded-xl p-8 md:p-12 flex items-center min-h-[250px]">
+            <div className="bg-muted rounded-xl p-5 sm:p-8 md:p-12 flex items-center min-h-[200px] md:min-h-[250px]">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={active}

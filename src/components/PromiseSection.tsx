@@ -28,7 +28,7 @@ const PromiseSection = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.97 }}
               href="#contact"
-              className="mt-10 inline-flex items-center gap-3 bg-primary text-primary-foreground px-10 py-4 font-bold text-sm tracking-widest uppercase"
+              className="mt-8 md:mt-10 inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 sm:px-10 py-3 sm:py-4 font-bold text-sm tracking-widest uppercase"
             >
               REACH OUT <ArrowRight size={16} />
             </motion.a>

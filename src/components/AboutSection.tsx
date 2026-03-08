@@ -32,7 +32,7 @@ const AboutSection = () => {
               </div>
             </AnimateIn>
             <AnimateIn delay={0.3}>
-              <div className="bg-muted rounded-lg p-8">
+              <div className="bg-muted rounded-lg p-5 sm:p-8">
                 <h3 className="text-xl font-display font-bold text-foreground mb-3">💎 Values</h3>
                 <p className="text-muted-foreground leading-relaxed text-sm">
                   We deeply value robust, trusted partnerships with our clients. Our commitment extends beyond service — we prioritize enduring relationships built on trust, transparency, and mutual respect.

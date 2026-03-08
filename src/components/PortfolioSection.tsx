@@ -123,7 +123,7 @@ const PortfolioSection = () => {
                     </motion.div>
                   </div>
                 </div>
-                <div className="p-6">
+                <div className="p-4 sm:p-6">
                   <p className="text-xs font-semibold tracking-widest text-primary uppercase mb-2">
                     {project.category}
                   </p>
