@@ -64,7 +64,7 @@ const PortfolioSection = () => {
     : projects.filter((p) => p.category === activeFilter);
 
   return (
-    <section id="portfolio" className="py-24 bg-muted">
+    <section id="portfolio" className="py-16 md:py-24 bg-muted">
       <div className="container">
         <AnimateIn>
           <p className="text-xs font-semibold tracking-[0.3em] text-muted-foreground uppercase mb-4">
@@ -95,7 +95,7 @@ const PortfolioSection = () => {
         </AnimateIn>
 
         {/* Project grid */}
-        <motion.div layout className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <motion.div layout className="mt-8 md:mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           <AnimatePresence mode="popLayout">
             {filtered.map((project) => (
               <motion.div
@@ -123,7 +123,7 @@ const PortfolioSection = () => {
                     </motion.div>
                   </div>
                 </div>
-                <div className="p-6">
+                <div className="p-4 sm:p-6">
                   <p className="text-xs font-semibold tracking-widest text-primary uppercase mb-2">
                     {project.category}
                   </p>

@@ -12,7 +12,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="z-10">
           
-          <h1 className="text-6xl font-display font-bold uppercase leading-[0.9] tracking-tight text-secondary md:text-9xl">
+          <h1 className="text-5xl font-display font-bold uppercase leading-[0.9] tracking-tight text-secondary sm:text-6xl md:text-9xl">
             BRIGHT<span className="font-extrabold text-secondary-foreground">KITTY</span>
           </h1>
           <motion.p
@@ -30,7 +30,7 @@ const HeroSection = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
             href="#contact"
-            className="mt-10 inline-flex items-center gap-3 bg-secondary text-secondary-foreground px-10 py-4 font-bold text-sm tracking-widest uppercase">
+            className="mt-8 md:mt-10 inline-flex items-center gap-3 bg-secondary text-secondary-foreground px-8 sm:px-10 py-3 sm:py-4 font-bold text-sm tracking-widest uppercase">
             
             REACH OUT <ArrowRight size={16} />
           </motion.a>

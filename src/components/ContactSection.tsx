@@ -19,7 +19,7 @@ const ContactSection = () => {
         <div className="absolute inset-0 bg-secondary/90" />
       </div>
 
-      <div className="relative container py-24">
+      <div className="relative container py-16 md:py-24">
         <AnimateIn>
           <p className="text-xs font-semibold tracking-[0.3em] uppercase mb-4 text-secondary-foreground/60">WANT TO SAY "Hi"?</p>
           <h2 className="text-4xl md:text-5xl font-display font-bold text-secondary-foreground">

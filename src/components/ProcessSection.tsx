@@ -16,7 +16,7 @@ const ProcessSection = () => {
   const [active, setActive] = useState(0);
 
   return (
-    <section id="process" className="py-24 bg-background">
+    <section id="process" className="py-16 md:py-24 bg-background">
       <div className="container">
         <AnimateIn>
           <p className="text-xs font-semibold tracking-[0.3em] text-muted-foreground uppercase mb-4">
@@ -28,14 +28,14 @@ const ProcessSection = () => {
         </AnimateIn>
 
         <AnimateIn delay={0.15}>
-          <div className="mt-12 grid md:grid-cols-[300px_1fr] gap-8">
-            <div className="flex md:flex-col gap-2">
+          <div className="mt-8 md:mt-12 grid md:grid-cols-[300px_1fr] gap-6 md:gap-8">
+            <div className="flex flex-wrap md:flex-col gap-2">
               {steps.map((step, i) => (
                 <motion.button
                   key={step.title}
                   onClick={() => setActive(i)}
                   whileHover={{ x: 4 }}
-                  className={`flex items-center gap-3 px-4 py-3 rounded-lg text-left transition-all text-sm font-semibold ${
+                  className={`flex items-center gap-2 sm:gap-3 px-3 sm:px-4 py-2 sm:py-3 rounded-lg text-left transition-all text-xs sm:text-sm font-semibold ${
                     i === active ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:bg-muted"
                   }`}
                 >
@@ -44,7 +44,7 @@ const ProcessSection = () => {
                 </motion.button>
               ))}
             </div>
-            <div className="bg-muted rounded-xl p-8 md:p-12 flex items-center min-h-[250px]">
+            <div className="bg-muted rounded-xl p-5 sm:p-8 md:p-12 flex items-center min-h-[200px] md:min-h-[250px]">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={active}
