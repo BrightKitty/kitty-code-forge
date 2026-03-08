@@ -16,7 +16,7 @@ const PromiseSection = () => {
           </h2>
         </AnimateIn>
 
-        <div className="mt-12 grid md:grid-cols-2 gap-12 items-center">
+        <div className="mt-8 md:mt-12 grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <AnimateIn delay={0.1}>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Specializing in the creation of vibrant, state-of-the-art websites, we pride ourselves on delivering to-the-point web apps that are extremely stable and convert.
