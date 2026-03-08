@@ -24,7 +24,7 @@ const AboutSection = () => {
           </AnimateIn>
           <div>
             <AnimateIn delay={0.2}>
-              <div className="bg-muted rounded-lg p-8 mb-6">
+              <div className="bg-muted rounded-lg p-5 sm:p-8 mb-6">
                 <h3 className="text-xl font-display font-bold text-foreground mb-3">🎯 Mission</h3>
                 <p className="text-muted-foreground leading-relaxed text-sm">
                   To craft cutting-edge websites that transcend creativity, precision, and conversion. We blend innovation and expertise to deliver web solutions that captivate audiences and drive engagement.
