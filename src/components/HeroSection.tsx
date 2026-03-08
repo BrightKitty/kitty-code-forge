@@ -4,7 +4,25 @@ import heroKitty from "@/assets/hero-kitty.png";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen bg-gradient-hero flex items-center overflow-hidden pt-16">
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.2, ease: "easeOut" }}
+      className="relative min-h-screen bg-gradient-hero flex items-center overflow-hidden pt-16"
+    >
+      {/* Animated gradient overlay */}
+      <motion.div
+        initial={{ opacity: 0, scale: 1.3 }}
+        animate={{ opacity: 0.4, scale: 1 }}
+        transition={{ duration: 1.8, ease: [0.22, 1, 0.36, 1] }}
+        className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,hsl(var(--primary)/0.6),transparent_60%)] pointer-events-none"
+      />
+      <motion.div
+        initial={{ opacity: 0, x: -100 }}
+        animate={{ opacity: 0.3, x: 0 }}
+        transition={{ duration: 2, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
+        className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,hsl(var(--accent)/0.5),transparent_50%)] pointer-events-none"
+      />
       <div className="container grid md:grid-cols-2 items-center gap-6 md:gap-8 py-8 md:py-0">
 
         {/* ── Text column ── */}
