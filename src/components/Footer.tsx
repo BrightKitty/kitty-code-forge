@@ -1,9 +1,8 @@
-import { forwardRef } from "react";
 import logoTransparent from "@/assets/logo-transparent.png";
 
-const Footer = forwardRef<HTMLElement>((_, ref) => {
+const Footer = () => {
   return (
-    <footer ref={ref} className="bg-secondary text-secondary-foreground py-12">
+    <footer className="bg-secondary text-secondary-foreground py-12">
       <div className="container flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="flex items-center gap-3">
           <img src={logoTransparent} alt="BrightKitty" className="h-8 w-8" />
@@ -15,8 +14,6 @@ const Footer = forwardRef<HTMLElement>((_, ref) => {
       </div>
     </footer>
   );
-});
-
-Footer.displayName = "Footer";
+};
 
 export default Footer;
