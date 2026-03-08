@@ -35,7 +35,7 @@ const ProcessSection = () => {
                   key={step.title}
                   onClick={() => setActive(i)}
                   whileHover={{ x: 4 }}
-                  className={`flex items-center gap-3 px-4 py-3 rounded-lg text-left transition-all text-sm font-semibold ${
+                  className={`flex items-center gap-2 sm:gap-3 px-3 sm:px-4 py-2 sm:py-3 rounded-lg text-left transition-all text-xs sm:text-sm font-semibold ${
                     i === active ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:bg-muted"
                   }`}
                 >
