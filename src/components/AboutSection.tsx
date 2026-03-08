@@ -2,7 +2,7 @@ import AnimateIn from "./AnimateIn";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-24 bg-background">
+    <section id="about" className="py-16 md:py-24 bg-background">
       <div className="container">
         <AnimateIn>
           <p className="text-xs font-semibold tracking-[0.3em] text-muted-foreground uppercase mb-4">
