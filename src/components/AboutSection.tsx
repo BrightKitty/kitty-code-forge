@@ -13,7 +13,7 @@ const AboutSection = () => {
           </h2>
         </AnimateIn>
 
-        <div className="mt-12 grid md:grid-cols-2 gap-12">
+        <div className="mt-8 md:mt-12 grid md:grid-cols-2 gap-8 md:gap-12">
           <AnimateIn delay={0.1}>
             <p className="text-muted-foreground leading-relaxed">
               BrightKitty stands as a testament to the fusion of exceptional talent and creative synergy. We're a team of passionate developers and designers who believe that building great software should feel as natural as a cat landing on its feet — graceful, precise, and always impressive.
