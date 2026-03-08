@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { forwardRef, ReactNode } from "react";
+import { ReactNode } from "react";
 
 interface Props {
   children: ReactNode;
@@ -15,24 +15,19 @@ const directionMap = {
   right: { x: -40, y: 0 },
 };
 
-const AnimateIn = forwardRef<HTMLDivElement, Props>(
-  ({ children, className, delay = 0, direction = "up" }, ref) => {
-    const offset = directionMap[direction];
-    return (
-      <motion.div
-        ref={ref}
-        initial={{ opacity: 0, ...offset }}
-        whileInView={{ opacity: 1, x: 0, y: 0 }}
-        viewport={{ once: true, margin: "-80px" }}
-        transition={{ duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] }}
-        className={className}
-      >
-        {children}
-      </motion.div>
-    );
-  }
-);
-
-AnimateIn.displayName = "AnimateIn";
+const AnimateIn = ({ children, className, delay = 0, direction = "up" }: Props) => {
+  const offset = directionMap[direction];
+  return (
+    <motion.div
+      initial={{ opacity: 0, ...offset }}
+      whileInView={{ opacity: 1, x: 0, y: 0 }}
+      viewport={{ once: true, margin: "-80px" }}
+      transition={{ duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] }}
+      className={className}
+    >
+      {children}
+    </motion.div>
+  );
+};
 
 export default AnimateIn;
