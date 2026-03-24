@@ -29,12 +29,12 @@ const TechSection = () => {
     <section id="tech" className="pt-16 md:pt-24 pb-0 bg-secondary text-secondary-foreground">
       <div className="container">
         <AnimateIn>
-          <p className="text-xs font-semibold tracking-[0.3em] uppercase mb-4 opacity-60">
+          <p className="text-xl font-semibold tracking-[0.3em] uppercase mb-4 opacity-60">
             SECURE, RELIABLE, TO-THE-POINT
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold">Tech Stack</h2>
-          <p className="mt-4 md:mt-6 max-w-2xl opacity-80 leading-relaxed text-sm md:text-base">
-            We only deal with the most tested open source frameworks and APIs that are safe and proven to significantly decrease client frustration.
+          <p className="mt-4 md:mt-6 max-w-2xl opacity-80 leading-relaxed text-sm md:text-lg">
+          We only deal with the most tested open source frameworks and APIs that are safe and proven to significantly decrease client frustration.
           </p>
         </AnimateIn>
 
@@ -57,8 +57,8 @@ const TechSection = () => {
       </div>
 
       <div className="mt-12 md:mt-24 border-t border-b border-secondary-foreground/10 py-4 overflow-hidden">
-        <div className="container flex items-center justify-between gap-4">
-          {Array.from({ length: 6 }).map((_, i) => (
+        <div className="w-full flex items-center justify-between gap-3">
+          {Array.from({ length: 12 }).map((_, i) => (
             <div key={i} className={`flex items-center gap-2 sm:gap-3 shrink-0 ${i > 1 ? "hidden sm:flex" : ""} ${i > 3 ? "sm:hidden lg:flex" : ""}`}>
               <img src={logoTransparent} alt="" className="h-6 w-6 sm:h-8 sm:w-8" />
               <span className="text-sm sm:text-xl font-display font-bold tracking-wide whitespace-nowrap">

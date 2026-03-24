@@ -16,7 +16,7 @@ const ServicesSection = () => {
     <section id="services" className="py-16 md:py-24 bg-background">
       <div className="container">
         <AnimateIn>
-          <p className="text-xs font-semibold tracking-[0.3em] text-muted-foreground uppercase mb-4">
+          <p className="text-xl font-semibold tracking-[0.3em] text-muted-foreground uppercase mb-4">
             WELL COVERED AND EFFECTIVE
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-foreground">

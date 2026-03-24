@@ -49,10 +49,10 @@ const Navbar = () => {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
           ? "bg-background/95 backdrop-blur-sm border-b border-border shadow-sm"
-          : "bg-transparent border-b border-transparent"
+          : "bg-white border-b border-transparent"
       }`}
     >
-      <div className="container flex items-center justify-between h-14 sm:h-16">
+      <div className="container flex items-center justify-between h-[84px] sm:h-24">
         <a href="#" className="flex items-center">
           <img src={wordmarkBlue} alt="BrightKitty" className="h-7 sm:h-8" />
         </a>
@@ -63,7 +63,7 @@ const Navbar = () => {
             <a
               key={item.label}
               href={item.href}
-              className={`text-xs font-semibold tracking-widest transition-colors relative pb-1 ${
+              className={`text-lg font-semibold tracking-widest transition-colors relative pb-1 ${
                 activeSection === item.href.slice(1)
                   ? "text-primary after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-primary"
                   : scrolled

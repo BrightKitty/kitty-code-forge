@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "allowImportingTsExtensions": true,
+    "composite": true,
     "isolatedModules": true,
     "jsx": "react-jsx",
     "lib": [
@@ -8,10 +9,11 @@
       "DOM",
       "DOM.Iterable"
     ],
+    "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
     "moduleDetection": "force",
     "moduleResolution": "bundler",
-    "noEmit": true,
+    "emitDeclarationOnly": true,
     "noFallthroughCasesInSwitch": false,
     "noImplicitAny": false,
     "noUnusedLocals": false,
@@ -22,11 +24,9 @@
       ]
     },
     "skipLibCheck": true,
-    "strict": false,
+    "strict": true,
     "target": "ES2020",
-    "types": [
-      "vitest/globals"
-    ],
+    "types": [],
     "useDefineForClassFields": true
   },
   "include": [

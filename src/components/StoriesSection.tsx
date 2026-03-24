@@ -19,7 +19,7 @@ const StoriesSection = () => {
     <section id="stories" className="py-16 md:py-24 bg-muted">
       <div className="container">
         <AnimateIn>
-          <p className="text-xs font-semibold tracking-[0.3em] text-muted-foreground uppercase mb-4">CHECK OUT</p>
+          <p className="text-xl font-semibold tracking-[0.3em] text-muted-foreground uppercase mb-4">CHECK OUT</p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-foreground">
             Our <span className="text-gradient-brand">Stories</span>
           </h2>

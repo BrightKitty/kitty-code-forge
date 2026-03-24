@@ -8,7 +8,7 @@ const HeroSection = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.2, ease: "easeOut" }}
-      className="relative min-h-screen bg-gradient-hero flex items-center overflow-hidden pt-16"
+      className="relative min-h-screen bg-gradient-hero flex items-center overflow-hidden pt-10 md:pt-16"
     >
       {/* Animated gradient overlay */}
       <motion.div
@@ -42,8 +42,8 @@ const HeroSection = () => {
             Web Studio
           </motion.span>
 
-          <h1 className="text-5xl font-display font-bold uppercase leading-[0.85] tracking-tight text-secondary sm:text-6xl md:text-7xl lg:text-9xl text-center md:text-left">
-            BRIGHT
+          <h1 className="text-5xl font-display font-bold uppercase leading-[0.85] tracking-tight text-[#161966] sm:text-6xl md:text-7xl lg:text-9xl text-center md:text-left">
+          BRIGHT
             <span className="block md:inline font-extrabold text-secondary-foreground">KITTY</span>
           </h1>
 
@@ -59,7 +59,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="mt-4 md:mt-8 text-[15px] md:text-xl text-secondary max-w-xs md:max-w-md leading-relaxed opacity-90 text-center md:text-left"
+            className="mt-4 md:mt-8 text-[15px] md:text-2xl text-secondary max-w-xs md:max-w-md leading-relaxed opacity-90 text-center md:text-left"
           >
             We craft immersive web experiences that transcend expectations — with a purr.
           </motion.p>
@@ -91,7 +91,7 @@ const HeroSection = () => {
           <img
             src={heroKitty}
             alt="BrightKitty Engineer Mascot"
-            className="w-[200px] sm:w-[280px] md:w-[500px] drop-shadow-2xl relative z-10"
+            className="w-[200px] sm:w-[280px] md:w-[800px] drop-shadow-2xl relative z-10"
           />
         </motion.div>
       </div>
@@ -103,8 +103,8 @@ const HeroSection = () => {
         transition={{ delay: 1, duration: 0.6 }}
         className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1"
       >
-        <span className="text-secondary/50 text-[9px] tracking-[0.2em] uppercase font-semibold hidden sm:block">Scroll</span>
-        <ChevronDown size={20} className="text-secondary/60 animate-bounce" />
+        <span className="text-secondary/50 text-[11px] tracking-[0.2em] uppercase font-semibold hidden sm:block">Scroll</span>
+        <ChevronDown size={50} className="text-secondary/60 animate-bounce" />
       </motion.div>
     </motion.section>
   );

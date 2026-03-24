@@ -19,7 +19,7 @@ const ProcessSection = () => {
     <section id="process" className="py-16 md:py-24 bg-background">
       <div className="container">
         <AnimateIn>
-          <p className="text-xs font-semibold tracking-[0.3em] text-muted-foreground uppercase mb-4">
+          <p className="text-xl font-semibold tracking-[0.3em] text-muted-foreground uppercase mb-4">
             THIRD, YOU SHOULD KNOW ABOUT
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-foreground">
@@ -36,7 +36,7 @@ const ProcessSection = () => {
                   key={step.title}
                   onClick={() => setActive(i)}
                   whileHover={{ x: 4 }}
-                  className={`flex items-center justify-center md:justify-start gap-2 px-2 sm:px-4 py-2.5 sm:py-3 rounded-lg text-center md:text-left transition-all text-[11px] sm:text-sm font-semibold ${
+                  className={`flex items-center justify-center md:justify-start gap-2 px-2 sm:px-4 py-2.5 sm:py-3 rounded-lg text-center md:text-left transition-all text-sm sm:text-base md:text-lg font-semibold ${
                     i === active ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:bg-muted"
                   }`}
                 >
@@ -58,7 +58,7 @@ const ProcessSection = () => {
                     {(() => { const Icon = steps[active].icon; return <Icon size={20} className="text-primary sm:[&]:w-6 sm:[&]:h-6" />; })()}
                   </div>
                   <h3 className="text-xl sm:text-2xl font-display font-bold text-foreground mb-3 sm:mb-4">{steps[active].title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed max-w-lg">{steps[active].description}</p>
+                  <p className="text-lg text-muted-foreground leading-relaxed max-w-lg">{steps[active].description}</p>
                 </motion.div>
               </AnimatePresence>
             </div>
