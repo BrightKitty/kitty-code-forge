@@ -103,8 +103,8 @@ const HeroSection = () => {
         transition={{ delay: 1, duration: 0.6 }}
         className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1"
       >
-        <span className="text-secondary/50 text-[11px] tracking-[0.2em] uppercase font-semibold hidden sm:block">Scroll</span>
-        <ChevronDown size={50} className="text-secondary/60 animate-bounce" />
+       
+        <ChevronDown size={40} className="text-secondary/60 animate-bounce" />
       </motion.div>
     </motion.section>
   );

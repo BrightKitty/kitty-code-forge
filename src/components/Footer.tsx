@@ -19,13 +19,16 @@ const Footer = () => {
                 <a href="#" className="hover:underline">Web Development</a>
               </li>
               <li>
-                <a href="#" className="hover:underline">AI Automation</a>
+                <a href="#" className="hover:underline">AI & Automation</a>
               </li>
                <li className="mb-4">
                 <a href="#" className="hover:underline">Data Analytics</a>
               </li>
                <li className="mb-4">
                 <a href="#" className="hover:underline">Digital Marketing</a>
+              </li>
+              <li className="mb-4">
+                <a href="#" className="hover:underline">Custom Software Engineering</a>
               </li>
               </ul>
             </div>
