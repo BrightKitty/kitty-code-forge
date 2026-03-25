@@ -42,7 +42,7 @@ const HeroSection = () => {
             Web Studio
           </motion.span>
 
-          <h1 className="text-5xl font-display font-bold uppercase leading-[0.85] tracking-tight text-[#161966] sm:text-6xl md:text-7xl lg:text-9xl text-center md:text-left">
+          <h1 className="text-5xl font-display font-bold uppercase leading-[0.85] tracking-tight text-[#083d77] sm:text-6xl md:text-7xl lg:text-9xl text-center md:text-left">
           BRIGHT
             <span className="block md:inline font-extrabold text-secondary-foreground">KITTY</span>
           </h1>

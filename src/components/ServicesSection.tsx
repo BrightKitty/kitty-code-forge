@@ -7,7 +7,7 @@ const services = [
   { icon: Palette, title: "UX/UI Design", description: "Designed with conversion in mind, we design captivating interfaces that entice your audience and guide them toward a conversion-driven path." },
   { icon: Code2, title: "Web Development", description: "We utilize the latest and most affordable tech. We pay attention to performance, accessibility, best practices, and SEO scores from the initial commit." },
   { icon: CreditCard, title: "Monetization", description: "We can build complete licensing and monetization APIs for native and mobile applications. Subscription and one-time purchase systems are our bread and butter." },
-  { icon: BarChart3, title: "CRO", description: "Over ten years of experience building authentic relationships with users through incredibly designed UX/UI. We use A/B testing to understand the perfect formula." },
+  { icon: BarChart3, title: "CRO", description: "Over  years of experience building authentic relationships with users through incredibly designed UX/UI. We use A/B testing to understand the perfect formula." },
   { icon: BookOpen, title: "Docs & Training", description: "Upon completing a project, we leave you with complete documentation, in-code comments, and personal training to ensure you know the entire inner workings." },
 ];
 
