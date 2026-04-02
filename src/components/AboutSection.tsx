@@ -6,7 +6,7 @@ const AboutSection = () => {
       <div className="container">
         <AnimateIn>
           <p className="text-xl font-semibold tracking-[0.3em] text-muted-foreground uppercase mb-4">
-            FIRST, YOU SHOULD KNOW
+            The Instinct for Better Build.
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-foreground">
             About <span className="text-gradient-brand">BrightKitty</span>
@@ -16,10 +16,9 @@ const AboutSection = () => {
         <div className="mt-8 md:mt-12 grid md:grid-cols-2 gap-8 md:gap-12">
           <AnimateIn delay={0.1}>
             <p className="text-sm sm:text-xl text-muted-foreground leading-relaxed">
-            We're a team of passionate developers and designers who believe that building great software should feel as natural as a cat landing on its feet — graceful, precise, and always impressive.
-            </p>
+           At BrightKitty, we don't just ship code; we hunt for excellence. We believe software should be as sleek as a prowling cat and as dependable as its landing. </p>
             <p className="mt-4 sm:mt-6 text-sm sm:text-xl text-muted-foreground leading-relaxed">
-            Our journey combines engineering excellence with creativity. Websites and apps that don't just work, they delight. We bring the same level of curiosity and craftsmanship to every project from startups to established brands.
+             We bring the same level of curiosity and craftsmanship to every project from startups to established brands.Our team blends curiosity with craftsmanship to turn complex problems into elegant, intuitive digital realities.
             </p>
           </AnimateIn>
           <div className="grid gap-4 sm:gap-6">

@@ -1,4 +1,5 @@
-import { Lightbulb, Palette, Code2, CreditCard, BarChart3, BookOpen } from "lucide-react";
+import { Lightbulb, Palette, Code2, Zap, BarChart3, TabletSmartphone } from "lucide-react";
+
 import { motion } from "framer-motion";
 import AnimateIn from "./AnimateIn";
 
@@ -6,9 +7,9 @@ const services = [
   { icon: Lightbulb, title: "Idea & Concept", description: "We develop projects from scratch and provide suggestions on your initial idea and concept. We arrange brainstorming meetings to develop a successful project." },
   { icon: Palette, title: "UX/UI Design", description: "Designed with conversion in mind, we design captivating interfaces that entice your audience and guide them toward a conversion-driven path." },
   { icon: Code2, title: "Web Development", description: "We utilize the latest and most affordable tech. We pay attention to performance, accessibility, best practices, and SEO scores from the initial commit." },
-  { icon: CreditCard, title: "Monetization", description: "We can build complete licensing and monetization APIs for native and mobile applications. Subscription and one-time purchase systems are our bread and butter." },
-  { icon: BarChart3, title: "CRO", description: "Over  years of experience building authentic relationships with users through incredibly designed UX/UI. We use A/B testing to understand the perfect formula." },
-  { icon: BookOpen, title: "Docs & Training", description: "Upon completing a project, we leave you with complete documentation, in-code comments, and personal training to ensure you know the entire inner workings." },
+  { icon: Zap, title: "AI Integration", description: "We integrate cutting-edge AI solutions into your products, enhancing functionality and user experience." },
+  { icon: BarChart3, title: "Digital Marketing", description: "We help you reach your target audience and drive conversions through data-driven digital marketing strategies." },
+  { icon: TabletSmartphone, title: "Mobile App Development", description: "We build cross-platform mobile applications that deliver exceptional user experiences." },
 ];
 
 const ServicesSection = () => {
@@ -17,7 +18,7 @@ const ServicesSection = () => {
       <div className="container">
         <AnimateIn>
           <p className="text-xl font-semibold tracking-[0.3em] text-muted-foreground uppercase mb-4">
-            WELL COVERED AND EFFECTIVE
+            The Capabilities We Offer.
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-foreground">
             Services <span className="text-gradient-brand">Provided</span>

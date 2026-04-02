@@ -30,11 +30,11 @@ const TechSection = () => {
       <div className="container">
         <AnimateIn>
           <p className="text-xl font-semibold tracking-[0.3em] uppercase mb-4 opacity-60">
-            SECURE, RELIABLE, TO-THE-POINT
+            SECURE & RELIABLE TOOLKIT
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold">Tech Stack</h2>
           <p className="mt-4 md:mt-6 max-w-2xl opacity-80 leading-relaxed text-sm md:text-lg">
-          We only deal with the most tested open source frameworks and APIs that are safe and proven to significantly decrease client frustration.
+          We only play with the sharpest tools in the shed. Our stack is battle-tested, lightning-fast, and designed to eliminate 'tech-debt' frustration
           </p>
         </AnimateIn>
 

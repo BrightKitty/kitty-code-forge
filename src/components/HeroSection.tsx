@@ -61,7 +61,7 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="mt-4 md:mt-8 text-[15px] md:text-2xl text-secondary max-w-xs md:max-w-md leading-relaxed opacity-90 text-center md:text-left"
           >
-            We craft immersive web experiences that transcend expectations — with a purr.
+            We craft Immersive Web Experiences with a Sharp Reflex.
           </motion.p>
 
           <motion.a

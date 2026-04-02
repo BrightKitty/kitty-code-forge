@@ -7,7 +7,8 @@ import portfolioDashboard from "@/assets/portfolio-dashboard.jpg";
 import portfolioRestaurant from "@/assets/portfolio-restaurant.jpg";
 import portfolioFitness from "@/assets/portfolio-fitness.jpg";
 import portfolioRealestate from "@/assets/portfolio-realestate.jpg";
-import portfolioFintech from "@/assets/portfolio-fintech.jpg";
+import portfolioCapitalPro from "@/assets/portfolio-capital-pro.jpg";
+import { link } from "fs";
 
 const categories = ["All", "Web Apps", "E-Commerce", "Mobile"] as const;
 
@@ -17,7 +18,7 @@ const projects = [
   { title: "Perriel Bistro", category: "Web Apps", description: "Restaurant website with online reservations and menu management CMS.", tech: ["Next.js", "Tailwind", "Prisma"], image: portfolioRestaurant },
   { title: "FitPulse", category: "Mobile", description: "Fitness tracking app with workout plans, progress charts, and social features.", tech: ["React Native", "Firebase", "Charts"], image: portfolioFitness },
   { title: "HomeNest", category: "E-Commerce", description: "Real estate listing platform with advanced search filters and virtual tours.", tech: ["React", "AWS", "Mapbox"], image: portfolioRealestate },
-  { title: "Sancure Pay", category: "Mobile", description: "Fintech banking app with secure transactions and budget tracking tools.", tech: ["React Native", "Stripe", "JWT"], image: portfolioFintech },
+  { title: "CapitalPro Advisory", category: "Web Apps", description: "Landing page for a financial advisory firm targeting high-net-worth clients.", tech: ["React", "Tailwind"], image: portfolioCapitalPro, link:"https://capitalproadvisory.com" }
 ];
 
 const PortfolioSection = () => {
@@ -83,7 +84,20 @@ const PortfolioSection = () => {
                       whileHover={{ scale: 1.1 }}
                       className="bg-primary text-primary-foreground p-3 rounded-full"
                     >
-                      <ExternalLink size={20} />
+                    <a 
+                        href={project.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="absolute inset-0 bg-secondary/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+                      >
+                        <motion.div
+                          initial={{ y: 20 }}
+                          whileHover={{ scale: 1.1 }}
+                          className="bg-primary text-primary-foreground p-3 rounded-full"
+                        >
+                          <ExternalLink size={20} />
+                        </motion.div>
+                      </a>
                     </motion.div>
                   </div>
                 </div>

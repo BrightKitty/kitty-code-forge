@@ -4,13 +4,13 @@ import AnimateIn from "./AnimateIn";
 const testimonials = [
   {
     quote: "BrightKitty has become like family to us. They have been an integral part of scaling our company in our creative development, and we're looking forward to a long and fruitful relationship. I enthusiastically recommend BrightKitty if you want to take your company to new heights.",
-    name: "Sarah Mitchell",
-    company: "TechPulse Inc.",
+    name: "Sarah Johnson",
+    company: "TechPulse.",
   },
   {
     quote: "Working with BrightKitty was an absolute game-changer. Their attention to detail and commitment to quality resulted in a 40% increase in our conversion rate. The team truly understands how to blend aesthetics with functionality.",
-    name: "James Chen",
-    company: "NovaBrand Studio",
+    name: "James Wilson",
+    company: "Nova Digital",
   },
 ];
 

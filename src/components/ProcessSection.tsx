@@ -20,7 +20,7 @@ const ProcessSection = () => {
       <div className="container">
         <AnimateIn>
           <p className="text-xl font-semibold tracking-[0.3em] text-muted-foreground uppercase mb-4">
-            THIRD, YOU SHOULD KNOW ABOUT
+          KNOW ABOUT
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-foreground">
             Our Process <span className="text-gradient-brand">Flow</span>

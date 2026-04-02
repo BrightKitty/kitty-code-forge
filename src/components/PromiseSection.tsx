@@ -9,7 +9,7 @@ const PromiseSection = () => {
       <div className="container">
         <AnimateIn>
           <p className="text-xl font-semibold tracking-[0.3em] text-muted-foreground uppercase mb-4">
-            SECOND, YOU SHOULD KNOW
+           YOU SHOULD KNOW
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-foreground">
             OUR PROMISE
